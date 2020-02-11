@@ -31,6 +31,9 @@ header {
   height: 150px;
   border: 1px dotted black;
 }
+.active {
+  background-color: #e6e6e6;
+}
 footer {
   display: flex;
   flex-direction: row;
