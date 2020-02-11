@@ -19,7 +19,7 @@ let cpuSeq = [];
 let userSeq = [];
 
 //Assign level variable a starting value
-level.innerHTML = 0;
+level.innerHTML = "Level:" + " " + 0;
 
 //Begin creating functionality for start button
 startBtn.addEventListener("click", startGame);
@@ -32,3 +32,9 @@ function startGame() {
 
 //Define start sequence function (computer sequence)
 function startSeq() {}
+
+//Define function to generate random color selection
+function randomColor() {
+  let random = Math.floor(Math.random() * 4);
+  cpuSeq.push(random);
+}
