@@ -1,5 +1,5 @@
 //Create an array of colors
-let colors = ["blue", "red", "silver", "gold"];
+let colors = ["blue", "silver", "white", "red"];
 
 //Assign a variable to the game tiles
 let square = document.querySelectorAll(".tiles");

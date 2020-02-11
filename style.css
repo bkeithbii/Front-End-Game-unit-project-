@@ -1,17 +1,21 @@
 * {
   box-sizing: border-box;
 }
-
+body {
+  background-color: black;
+}
 header {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: white;
 }
 .subheader {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  color: white;
 }
 .gameContainer {
   display: grid;
@@ -33,4 +37,5 @@ footer {
   justify-content: space-evenly;
   align-items: center;
   margin-top: 50px;
+  color: white;
 }
