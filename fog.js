@@ -21,6 +21,9 @@ let userSeq = [];
 //Assign level variable a starting value
 level.innerHTML = "Level:" + " " + 0;
 
+//Assign id a starting value
+id = 0;
+
 //Begin creating functionality for start button
 startBtn.addEventListener("click", startGame);
 
@@ -31,10 +34,22 @@ function startGame() {
 }
 
 //Define start sequence function (computer sequence)
-function startSeq() {}
+function startSeq() {
+  console.log(level.innerHTML);
+  randomColor();
+  let i = 0;
+  let myInt = setInterval(interval, 1000);
+}
 
 //Define function to generate random color selection
 function randomColor() {
   let random = Math.floor(Math.random() * 4);
   cpuSeq.push(random);
+}
+
+//Define a set interval function for showing the tile color being pressed
+function interval() {
+  id = cpuSeq[i];
+  color = tiles[i];
+  console.log(id + " " + color);
 }
