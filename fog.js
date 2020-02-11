@@ -14,4 +14,21 @@ for (i = 0; i < colors.length; i++) {
   tiles[i].style.backgroundColor = colors[i];
 }
 
-//Assign active color to each game tile with for loop
+//Create an array for computer sequence (simon) and user sequence
+let cpuSeq = [];
+let userSeq = [];
+
+//Assign level variable a starting value
+level.innerHTML = 0;
+
+//Begin creating functionality for start button
+startBtn.addEventListener("click", startGame);
+
+//Define start game function
+function startGame() {
+  level.innerHTML++;
+  startSeq();
+}
+
+//Define start sequence function (computer sequence)
+function startSeq() {}
