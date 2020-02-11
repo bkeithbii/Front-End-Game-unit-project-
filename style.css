@@ -25,7 +25,7 @@ header {
 .tiles {
   width: 150px;
   height: 150px;
-  border: 1px dashed black;
+  border: 1px dotted black;
 }
 footer {
   display: flex;
