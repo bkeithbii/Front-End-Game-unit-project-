@@ -55,6 +55,14 @@ function removeColor() {
   boxBottom.style.backgroundColor = "silver";
 }
 
+//Define press color fucntion
+function pressColor() {
+  boxTop.style.backgroundColor = "mediumblue";
+  boxRight.style.backgroundColor = "violet";
+  boxLeft.style.backgroundColor = "yellow";
+  boxBottom.style.backgroundColor = "#f2f2f2";
+}
+
 //Define play game function details
 function playGame() {
   win = false;
@@ -115,7 +123,7 @@ function four() {
 boxTop.addEventListener("click", event => {
   if (on) {
     userSeq.push(1);
-    // verify();
+    verify();
     one();
   }
   if (!win) {
@@ -128,7 +136,7 @@ boxTop.addEventListener("click", event => {
 boxRight.addEventListener("click", event => {
   if (on) {
     userSeq.push(2);
-    // verify();
+    verify();
     two();
   }
   if (!win) {
@@ -141,7 +149,7 @@ boxRight.addEventListener("click", event => {
 boxLeft.addEventListener("click", event => {
   if (on) {
     userSeq.push(3);
-    // verify();
+    verify();
     three();
   }
   if (!win) {
@@ -154,7 +162,7 @@ boxLeft.addEventListener("click", event => {
 boxBottom.addEventListener("click", event => {
   if (on) {
     userSeq.push(4);
-    // verify();
+    verify();
     four();
   }
   if (!win) {
@@ -178,7 +186,7 @@ function verify() {
     pressColor();
     turnCounter.innerHTML = "WRONG!";
     setTimeout(() => {
-      turnCounter = turn;
+      turnCounter.innerHTML = turn;
       removeColor();
 
       if (strict) {
@@ -200,4 +208,11 @@ function verify() {
     turnCounter.innerHTML = turn;
     myInterval = setInterval(simonTurn, 800);
   }
+}
+
+function beatGame() {
+  pressColor();
+  turnCounter.innerHTML = "YOU WIN!";
+  on = false;
+  win = true;
 }
