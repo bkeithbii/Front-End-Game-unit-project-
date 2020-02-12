@@ -110,3 +110,17 @@ function three() {
 function four() {
   boxBottom.style.backgroundColor = "#f2f2f2";
 }
+
+//Add event listeners to buttons for player interaction
+boxTop.addEventListener("click", event => {
+  if (on) {
+    userSeq.push(1);
+    // verify();
+    one();
+  }
+  if (!win) {
+    setTimeout(() => {
+      removeColor();
+    }, 350);
+  }
+});
