@@ -124,3 +124,42 @@ boxTop.addEventListener("click", event => {
     }, 350);
   }
 });
+
+boxRight.addEventListener("click", event => {
+  if (on) {
+    userSeq.push(2);
+    // verify();
+    two();
+  }
+  if (!win) {
+    setTimeout(() => {
+      removeColor();
+    }, 350);
+  }
+});
+
+boxLeft.addEventListener("click", event => {
+  if (on) {
+    userSeq.push(3);
+    // verify();
+    three();
+  }
+  if (!win) {
+    setTimeout(() => {
+      removeColor();
+    }, 350);
+  }
+});
+
+boxBottom.addEventListener("click", event => {
+  if (on) {
+    userSeq.push(4);
+    // verify();
+    four();
+  }
+  if (!win) {
+    setTimeout(() => {
+      removeColor();
+    }, 350);
+  }
+});
