@@ -163,3 +163,41 @@ boxBottom.addEventListener("click", event => {
     }, 350);
   }
 });
+
+//Define verify function to check for correct pattern by user
+function verify() {
+  if (userSeq[userSeq.length - 1] !== cpuSeq[userSeq.length - 1]) {
+    correct = false;
+  }
+
+  if (userSeq.length == 20 && correct == true) {
+    beatGame();
+  }
+
+  if (correct == false) {
+    pressColor();
+    turnCounter.innerHTML = "WRONG!";
+    setTimeout(() => {
+      turnCounter = turn;
+      removeColor();
+
+      if (strict) {
+        playGame();
+      } else {
+        cpuTurn = true;
+        press = 0;
+        userSeq = [];
+        correct = true;
+        myInterval = setInterval(simonTurn, 800);
+      }
+    }, 800);
+  }
+  if (turn == userSeq.length && correct && !win) {
+    turn++;
+    userSeq = [];
+    cpuTurn = true;
+    press = 0;
+    turnCounter.innerHTML = turn;
+    myInterval = setInterval(simonTurn, 800);
+  }
+}
