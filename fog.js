@@ -60,5 +60,28 @@ function playGame() {
   for (let i = 0; i < 20; i++) {
     cpuSeq.push(Math.floor(Math.random() * 4) + 1);
   }
-  console.log(cpuSeq);
+  cpuTurn = true;
+
+  myInterval = setInterval(simonTurn, 800);
+}
+
+//Define simon turn function
+function simonTurn() {
+  on = false;
+  if (press == turn) {
+    clearInterval(myInterval);
+    cpuTurn = false;
+    removeColor();
+    on = true;
+  }
+  if (cpuTurn) {
+    removeColor();
+    setTimeout(() => {
+      if (cpuSeq[press] == 1) one();
+      if (cpuSeq[press] == 2) two();
+      if (cpuSeq[press] == 3) three();
+      if (cpuSeq[press] == 4) four();
+      press++;
+    }, 250);
+  }
 }
