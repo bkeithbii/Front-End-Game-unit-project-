@@ -47,6 +47,14 @@ startBtn.addEventListener("click", event => {
   }
 });
 
+//Define remove color function (returns colors to original state)
+function removeColor() {
+  boxTop.style.backgroundColor = "navy";
+  boxRight.style.backgroundColor = "purple";
+  boxLeft.style.backgroundColor = "gold";
+  boxBottom.style.backgroundColor = "silver";
+}
+
 //Define play game function details
 function playGame() {
   win = false;
@@ -88,7 +96,7 @@ function simonTurn() {
 
 //Define functions 1-4
 function one() {
-  boxTop.style.backgroundColor = "lightskyblue";
+  boxTop.style.backgroundColor = "mediumblue";
 }
 
 function two() {
@@ -100,5 +108,5 @@ function three() {
 }
 
 function four() {
-  boxBottom.style.backgroundColor = "lightgray";
+  boxBottom.style.backgroundColor = "#f2f2f2";
 }
