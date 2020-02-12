@@ -85,3 +85,20 @@ function simonTurn() {
     }, 250);
   }
 }
+
+//Define functions 1-4
+function one() {
+  boxTop.style.backgroundColor = "lightskyblue";
+}
+
+function two() {
+  boxRight.style.backgroundColor = "violet";
+}
+
+function three() {
+  boxLeft.style.backgroundColor = "yellow";
+}
+
+function four() {
+  boxBottom.style.backgroundColor = "lightgray";
+}
