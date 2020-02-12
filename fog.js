@@ -36,5 +36,29 @@ onBtn.addEventListener("change", event => {
   } else {
     on = false;
     turnCounter.innerHTML = "";
+    removeColor();
+    clearInterval(myInterval);
   }
 });
+
+startBtn.addEventListener("click", event => {
+  if (on || win) {
+    playGame();
+  }
+});
+
+//Define play game function details
+function playGame() {
+  win = false;
+  cpuSeq = [];
+  userSeq = [];
+  press = 0;
+  myInterval = 0;
+  turn = 1;
+  turnCounter.innerHTML = 1;
+  correct = true;
+  for (let i = 0; i < 20; i++) {
+    cpuSeq.push(Math.floor(Math.random() * 4) + 1);
+  }
+  console.log(cpuSeq);
+}
