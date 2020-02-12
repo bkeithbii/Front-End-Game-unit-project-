@@ -39,6 +39,7 @@ function startSeq() {
   randomColor();
   let i = 0;
   let myInt = setInterval(interval, 1000);
+  addClass(id, color);
 }
 
 //Define function to generate random color selection
@@ -52,4 +53,12 @@ function interval() {
   id = cpuSeq[i];
   color = tiles[i];
   console.log(id + " " + color);
+}
+
+//Define a function to add the active class to each tile during gameplay
+function addClass(id, color) {
+  id.classList.add(color + "active");
+  setTimeout(function() {
+    id.classList.remove(color + "active");
+  }, 500);
 }
