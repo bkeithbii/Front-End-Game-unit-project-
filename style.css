@@ -20,7 +20,7 @@ header {
 .gameContainer {
   display: grid;
   grid-template-columns: repeat(2, 150px);
-  grid-gap: 25px;
+  grid-gap: 15px;
   justify-content: center;
   align-items: center;
   margin-top: 100px;
@@ -29,15 +29,32 @@ header {
 .tile {
   width: 150px;
   height: 150px;
-  border: 1px dotted black;
+  border: 5px dashed black;
 }
-.active {
-  background-color: #e6e6e6;
+#box1 {
+  background-color: blue;
+}
+#box2 {
+  background-color: purple;
+}
+#box3 {
+  background-color: yellow;
+}
+#box4 {
+  background-color: silver;
+}
+.switches {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin-top: 60px;
 }
 footer {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   margin-top: 50px;
   color: white;
