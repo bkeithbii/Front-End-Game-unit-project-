@@ -49,18 +49,18 @@ startBtn.addEventListener("click", event => {
 
 //Define remove color function (returns colors to original state)
 function removeColor() {
-  boxTop.style.backgroundColor = "navy";
-  boxRight.style.backgroundColor = "purple";
-  boxLeft.style.backgroundColor = "gold";
-  boxBottom.style.backgroundColor = "silver";
+  boxTop.style.backgroundImage = "url('/redbutton2.gif')";
+  boxRight.style.backgroundImage = "url('/greenbutton1.gif')";
+  boxLeft.style.backgroundImage = "url('/pinkbutton1.gif')";
+  boxBottom.style.backgroundImage = "url('/Blue button.gif')";
 }
 
 //Define press color fucntion
 function pressColor() {
-  boxTop.style.backgroundColor = "mediumblue";
-  boxRight.style.backgroundColor = "violet";
-  boxLeft.style.backgroundColor = "yellow";
-  boxBottom.style.backgroundColor = "#f2f2f2";
+  boxTop.style.backgroundImage = "url('/redcircle1.png')";
+  boxRight.style.backgroundImage = "url('/greencircle1.png')";
+  boxLeft.style.backgroundImage = "url('/pinkcircle3.png')";
+  boxBottom.style.backgroundImage = "url('/bluecircle3.png')";
 }
 
 //Define play game function details
@@ -104,19 +104,19 @@ function simonTurn() {
 
 //Define functions 1-4
 function one() {
-  boxTop.style.backgroundColor = "mediumblue";
+  boxTop.style.backgroundImage = "url('/redcircle1.png')";
 }
 
 function two() {
-  boxRight.style.backgroundColor = "violet";
+  boxRight.style.backgroundImage = "url('/greencircle1.png')";
 }
 
 function three() {
-  boxLeft.style.backgroundColor = "yellow";
+  boxLeft.style.backgroundImage = "url('/pinkcircle3.png')";
 }
 
 function four() {
-  boxBottom.style.backgroundColor = "#f2f2f2";
+  boxBottom.style.backgroundImage = "url('/bluecircle3.png')";
 }
 
 //Add event listeners to buttons for player interaction

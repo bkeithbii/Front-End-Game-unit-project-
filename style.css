@@ -3,6 +3,9 @@
 }
 body {
   background-color: black;
+  background-image: url("/pheonixbackground.gif");
+  background-size: cover;
+  background-position: center;
 }
 header {
   display: flex;
@@ -29,7 +32,7 @@ header {
 .gameContainer {
   display: grid;
   grid-template-columns: repeat(2, 150px);
-  grid-gap: 15px;
+  grid-gap: 50px;
   justify-content: center;
   align-items: center;
   margin-top: 100px;
@@ -41,16 +44,24 @@ header {
   border: 5px dashed black;
 }
 #boxTop {
-  background-color: navy;
+  background-image: url("/redbutton2.gif");
+  background-size: contain;
+  /* background-image: url(/redcircle1.png); */
 }
 #boxRight {
-  background-color: purple;
+  background-image: url("/greenbutton1.gif");
+  background-size: contain;
+  /* background-image: url("/greencircle1.png"); */
 }
 #boxLeft {
-  background-color: gold;
+  background-image: url("/pinkbutton1.gif");
+  background-size: contain;
+  /* background-image: url("/pinkcircle3.png"); */
 }
 #boxBottom {
-  background-color: silver;
+  background-image: url("/Blue\ button.gif");
+  background-size: contain;
+  /* background-image: url(/bluecircle3.png); */
 }
 .switches {
   display: flex;
