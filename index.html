@@ -7,31 +7,66 @@
     <title>SIMON</title>
   </head>
   <body>
-    <div id="HOMEPAGE"></div>
+    <div id="HOMEPAGE">
+      <button id="playgame">Play Game</button>
+      <button id="instructions">Instructions</button>
+      <section class="info">
+        <h1>Instructions</h1>
+        <p>
+          - Simon Games are traditionally known in the form of toys. This
+          computer version of the game fulfills the same objective; to challenge
+          players in a way to measure memory retention capacity by generating a
+          growing sequence of events, in this case colors, that the player has
+          to repeat. How many sequential events can you remember? - Simon will
+          tell you. <br />
+          <br />
+          1. Once the game has loaded first you will want to click the power
+          switch to turn on the system, you will see a dash in the counter
+          placed in the middle of the tiles. <br />
+          <br />
+          2. To begin the game click the “Start” button and Simon will pick the
+          first color for you to repeat. <br />
+          <br />
+          3. Simon will initiate the game by lighting up the initial clicked
+          color (1) and an additional one (2). Your job is
+          to click on both colors in the same order (1)-(2). <br />
+          <br />
+          4. This process continues, adding and/or repeating new colors that you
+          must memorize and repeat in the same order, until your memory allows
+          it - and / or until you make a mistake. <br /><br />
+          5. However, because Simon is kind and forgiving he will allow you to
+          make a mistake, repeat his pattern and give you another chance to
+          redeem yourself with the correct sequence. <br />
+          <br />
+          6. Unless…. you want to try your luck on the dangerous side….click the
+          “Strict” switch and mistakes will not be tolerated, one incorrect move
+          and you must restart from the beginning! CHOOSE WISELY….
+        </p>
+      </section>
+    </div>
 
     <div id="GAME">
       <header>
         <h1>SIMON</h1>
       </header>
-      <section class="subheader">
-        <button class="instructions">Instructions</button>
-        <div id="turn"></div>
-      </section>
-
+      
       <main class="gameContainer">
+        <section class="subheader">
+          <div id="turn"></div>
+        </section>
         <div class="tile" id="boxTop"></div>
         <div class="tile" id="boxRight"></div>
         <div class="tile" id="boxLeft"></div>
         <div class="tile" id="boxBottom"></div>
       </main>
+      
       <section class="switches">
         <input type="checkbox" class="toggle" id="strict" /><span>Strict</span>
         <input type="checkbox" class="toggle" id="on" /><span>Power</span>
       </section>
-      <footer>
+      <div class="startBtn">
         <button class="button" id="start">START</button>
-      </footer>
-    </div>
+      </div>
   </body>
   <script src="fog.js"></script>
 </html>

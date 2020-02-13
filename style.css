@@ -15,10 +15,18 @@ header {
   color: white;
 }
 .subheader {
+  grid-row: 2;
+  grid-column: 2;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.startBtn {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-  color: white;
+  justify-content: center;
+  align-items: center;
 }
 #turn {
   font-size: 20px;
@@ -31,11 +39,32 @@ header {
 }
 .gameContainer {
   display: grid;
-  grid-template-columns: repeat(2, 150px);
+  grid-template-columns: repeat(3, 150px);
+  grid-template-rows: repeat(3, 150px);
   grid-gap: 50px;
   justify-content: center;
   align-items: center;
-  margin-top: 100px;
+  margin-top: 75px;
+  /* transform: rotate(45deg) translateY(-25px) translateX(-25px); */
+}
+#boxTop {
+  grid-row: 1;
+  grid-column: 2;
+  transform: rotate(45deg) translateY(-25px) translateX(-25px);
+}
+#boxRight {
+  grid-row: 2;
+  grid-column: 3;
+  transform: rotate(45deg) translateY(-25px) translateX(-25px);
+}
+#boxLeft {
+  grid-row: 2;
+  grid-column: 1;
+  transform: rotate(45deg) translateY(-25px) translateX(-25px);
+}
+#boxBottom {
+  grid-row: 3;
+  grid-column: 2;
   transform: rotate(45deg) translateY(-25px) translateX(-25px);
 }
 .tile {
@@ -69,7 +98,6 @@ header {
   justify-content: center;
   align-items: center;
   color: white;
-  margin-top: 60px;
 }
 .toggle {
   margin-left: 10px;
@@ -82,4 +110,22 @@ footer {
   align-items: center;
   margin-top: 50px;
   color: white;
+}
+#HOMEPAGE {
+  height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#instructions {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+.info {
+  display: none;
+}
+#GAME {
+  height: 100vh;
+  display: none;
 }

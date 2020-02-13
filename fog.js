@@ -216,3 +216,25 @@ function beatGame() {
   on = false;
   win = true;
 }
+
+//Create a button for homepage
+let instructions = document.querySelector("#instructions");
+let info = document.querySelector(".info");
+let playbutton = document.querySelector("#playgame");
+let gamepage = document.querySelector("#GAME");
+let homepage = document.querySelector("#HOMEPAGE");
+
+instructions.addEventListener("click", showInfo);
+
+function showInfo() {
+  info.style.display = "flex";
+  playhome.style.display = "none";
+}
+
+playbutton.addEventListener("click", showGame);
+
+function showGame() {
+  instructions.style.display = "none";
+  gamepage.style.display = "contents";
+  homepage.style.display = "none";
+}
