@@ -78,7 +78,7 @@ function playGame() {
   }
   cpuTurn = true;
 
-  myInterval = setInterval(simonTurn, 800);
+  myInterval = setInterval(simonTurn, 1000);
 }
 
 //Define simon turn function
@@ -196,7 +196,7 @@ function verify() {
         press = 0;
         userSeq = [];
         correct = true;
-        myInterval = setInterval(simonTurn, 800);
+        myInterval = setInterval(simonTurn, 1000);
       }
     }, 800);
   }
@@ -206,7 +206,7 @@ function verify() {
     cpuTurn = true;
     press = 0;
     turnCounter.innerHTML = turn;
-    myInterval = setInterval(simonTurn, 800);
+    myInterval = setInterval(simonTurn, 1000);
   }
 }
 
@@ -230,7 +230,6 @@ function showInfo() {
   info.style.display = "flex";
   instructionsbutton.style.display = "none";
   playbutton.style.display = "flex";
-  playbutton.style.backgroundColor = "white";
 }
 
 playbutton.addEventListener("click", showGame);
