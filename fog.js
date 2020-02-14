@@ -218,17 +218,19 @@ function beatGame() {
 }
 
 //Create a button for homepage
-let instructions = document.querySelector("#instructions");
+let instructionsbutton = document.querySelector("#instructions");
 let info = document.querySelector(".info");
 let playbutton = document.querySelector("#playgame");
 let gamepage = document.querySelector("#GAME");
 let homepage = document.querySelector("#HOMEPAGE");
 
-instructions.addEventListener("click", showInfo);
+instructionsbutton.addEventListener("click", showInfo);
 
 function showInfo() {
   info.style.display = "flex";
-  playbutton.style.display = "none";
+  instructionsbutton.style.display = "none";
+  playbutton.style.display = "flex";
+  playbutton.style.backgroundColor = "white";
 }
 
 playbutton.addEventListener("click", showGame);

@@ -12,7 +12,11 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: rgba(8, 8, 8, 0.842);
+  font-family: "Audiowide", cursive;
+  font-size: 25px;
+  margin-top: -25px;
+  /* text-decoration: underline; */
 }
 .subheader {
   grid-row: 2;
@@ -25,13 +29,16 @@ header {
   margin-bottom: 70px;
 }
 #turn {
-  font-size: 20px;
+  font-size: 15px;
+  font-family: "Press Start 2P", cursive;
   color: crimson;
-  width: 50px;
-  height: 20px;
+  width: 95px;
+  height: 40px;
+  padding-top: 12px;
   background-color: #330000;
   text-align: center;
   border-radius: 20%;
+  /* margin-bottom: 60px; */
 }
 .gameContainer {
   display: grid;
@@ -88,13 +95,9 @@ header {
   background-size: contain;
   /* background-image: url(/bluecircle3.png); */
 }
-/* .switches {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  color: white;
-} */
+.switches {
+  /* margin-top: -65px; */
+}
 .toggle {
   margin-left: 10px;
   margin-right: 10px;
@@ -113,6 +116,11 @@ footer {
   justify-content: space-evenly;
   align-items: center;
 }
+#GAME {
+  height: 100vh;
+  display: none;
+}
+
 #instructions {
   /* display: flex;
   justify-content: center;
@@ -120,8 +128,19 @@ footer {
 }
 .info {
   display: none;
+  font-family: "Audiowide", cursive;
+  color: rgb(250, 248, 248);
+  font-size: 17px;
+  text-align: center;
+  margin-right: 25px;
+  background-color: rgba(0, 0, 0, 0.514);
 }
-#GAME {
-  height: 100vh;
-  display: none;
+.infoheader {
+  text-decoration: underline;
+}
+button {
+  font-family: "Press Start 2P", cursive;
+}
+#start {
+  /* margin-top: 20px; */
 }
