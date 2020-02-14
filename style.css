@@ -120,11 +120,13 @@ footer {
   height: 100vh;
   display: none;
 }
-
+#playgame {
+  font-size: 75px;
+  color: rgba(255, 255, 255, 0.774);
+}
 #instructions {
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
+  font-size: 75px;
+  color: rgba(255, 255, 255, 0.774);
 }
 .info {
   display: none;
