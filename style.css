@@ -3,7 +3,7 @@
 }
 body {
   background-color: black;
-  background-image: url("/pheonixbackground.gif");
+  background-image: url("https://media.giphy.com/media/h3o35RC5wCdXl0Bjoc/giphy.gif");
   background-size: cover;
   background-position: center;
 }
@@ -77,22 +77,22 @@ header {
   border: 5px dashed black;
 }
 #boxTop {
-  background-image: url("/redbutton2.gif");
+  background-image: url("https://media.giphy.com/media/3o7aCRBaUv3Sng0rTy/giphy.gif");
   background-size: contain;
   /* background-image: url(/redcircle1.png); */
 }
 #boxRight {
-  background-image: url("/greenbutton1.gif");
+  background-image: url("https://media.giphy.com/media/3osxYsSSxjWhZw0BUY/giphy.gif");
   background-size: contain;
   /* background-image: url("/greencircle1.png"); */
 }
 #boxLeft {
-  background-image: url("/pinkbutton1.gif");
+  background-image: url("https://media.giphy.com/media/abt3O3BEwR6wg/giphy.gif");
   background-size: contain;
   /* background-image: url("/pinkcircle3.png"); */
 }
 #boxBottom {
-  background-image: url("/Blue\ button.gif");
+  background-image: url("https://media.giphy.com/media/5kFbMBOEdWjg1nItoG/giphy.gif");
   background-size: contain;
   /* background-image: url(/bluecircle3.png); */
 }

@@ -49,10 +49,14 @@ startBtn.addEventListener("click", event => {
 
 //Define remove color function (returns colors to original state)
 function removeColor() {
-  boxTop.style.backgroundImage = "url('/redbutton2.gif')";
-  boxRight.style.backgroundImage = "url('/greenbutton1.gif')";
-  boxLeft.style.backgroundImage = "url('/pinkbutton1.gif')";
-  boxBottom.style.backgroundImage = "url('/Blue button.gif')";
+  boxTop.style.backgroundImage =
+    "url('https://media.giphy.com/media/3o7aCRBaUv3Sng0rTy/giphy.gif')";
+  boxRight.style.backgroundImage =
+    "url('https://media.giphy.com/media/3osxYsSSxjWhZw0BUY/giphy.gif')";
+  boxLeft.style.backgroundImage =
+    "url('https://media.giphy.com/media/abt3O3BEwR6wg/giphy.gif')";
+  boxBottom.style.backgroundImage =
+    "url('https://media.giphy.com/media/5kFbMBOEdWjg1nItoG/giphy.gif')";
 }
 
 //Define press color fucntion
@@ -198,7 +202,7 @@ function verify() {
         correct = true;
         myInterval = setInterval(simonTurn, 1000);
       }
-    }, 800);
+    }, 1000);
   }
   if (turn == userSeq.length && correct && !win) {
     turn++;
