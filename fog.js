@@ -61,10 +61,10 @@ function removeColor() {
 
 //Define press color fucntion
 function pressColor() {
-  boxTop.style.backgroundImage = "url('/redcircle1.png')";
-  boxRight.style.backgroundImage = "url('/greencircle1.png')";
-  boxLeft.style.backgroundImage = "url('/pinkcircle3.png')";
-  boxBottom.style.backgroundImage = "url('/bluecircle3.png')";
+  boxTop.style.backgroundImage = "url('Images/redcircle1.png')";
+  boxRight.style.backgroundImage = "url('Images/greencircle1.png')";
+  boxLeft.style.backgroundImage = "url('Images/pinkcircle3.png')";
+  boxBottom.style.backgroundImage = "url('Images/bluecircle3.png')";
 }
 
 //Define play game function details
@@ -108,19 +108,19 @@ function simonTurn() {
 
 //Define functions 1-4
 function one() {
-  boxTop.style.backgroundImage = "url('/redcircle1.png')";
+  boxTop.style.backgroundImage = "url('Images/redcircle1.png')";
 }
 
 function two() {
-  boxRight.style.backgroundImage = "url('/greencircle1.png')";
+  boxRight.style.backgroundImage = "url('Images/greencircle1.png')";
 }
 
 function three() {
-  boxLeft.style.backgroundImage = "url('/pinkcircle3.png')";
+  boxLeft.style.backgroundImage = "url('Images/pinkcircle3.png')";
 }
 
 function four() {
-  boxBottom.style.backgroundImage = "url('/bluecircle3.png')";
+  boxBottom.style.backgroundImage = "url('Images/bluecircle3.png')";
 }
 
 //Add event listeners to buttons for player interaction
