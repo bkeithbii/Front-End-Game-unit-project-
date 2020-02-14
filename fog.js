@@ -228,7 +228,7 @@ instructions.addEventListener("click", showInfo);
 
 function showInfo() {
   info.style.display = "flex";
-  playhome.style.display = "none";
+  playbutton.style.display = "none";
 }
 
 playbutton.addEventListener("click", showGame);

@@ -19,14 +19,10 @@ header {
   grid-column: 2;
   color: white;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
-}
-.startBtn {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  margin-bottom: 70px;
 }
 #turn {
   font-size: 20px;
@@ -44,7 +40,7 @@ header {
   grid-gap: 50px;
   justify-content: center;
   align-items: center;
-  margin-top: 75px;
+  margin-top: 65px;
   /* transform: rotate(45deg) translateY(-25px) translateX(-25px); */
 }
 #boxTop {
@@ -92,13 +88,13 @@ header {
   background-size: contain;
   /* background-image: url(/bluecircle3.png); */
 }
-.switches {
+/* .switches {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   color: white;
-}
+} */
 .toggle {
   margin-left: 10px;
   margin-right: 10px;
